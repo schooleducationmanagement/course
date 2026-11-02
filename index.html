@@ -1,565 +1,623 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Syrantis — Skill training and placement for colleges and students</title>
-<meta name="description" content="Syrantis offers project-based training in programming, web, data science and hardware, with placement support for college students. Based in Bangalore.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230E2A4F'/%3E%3Cpath d='M9 8l-4 4 4 4M15 8l4 4-4 4' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13 6l-2 12' stroke='%23F5B82E' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
-<style>
-html{scroll-behavior:smooth}
-body{margin:0;background:#FAFAF7;font-family:'IBM Plex Sans',system-ui,sans-serif;color:#0E2A4F;-webkit-font-smoothing:antialiased}
-a{color:#1D5FD3}a:hover{opacity:.85}
-.wrap{display:flex;flex-direction:column;width:100%;min-height:100vh}
-.mob{display:none}
-@media (max-width: 900px){.desk{display:none}.mob{display:flex}}
-input:focus,select:focus,textarea:focus{outline:2px solid #1D5FD3;outline-offset:1px}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Syrantis ERP</title>
+  <meta name="description" content="Syrantis ERP for colleges and universities: timetables, attendance, exams, fees and notices in one system, with a web portal for staff and a student app for Android and iOS.">
+  <meta name="theme-color" content="#1A2746">
+  <meta property="og:title" content="Syrantis ERP">
+  <meta property="og:description" content="Run your whole college from one system. Timetables, attendance, exams, fees and notices for office, staff and students.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div class="wrap desk">
-<header style="width: 100%; height: 80px; background: #FAFAF7; border-bottom: 1px solid #D5DCE8; box-sizing: border-box;">
-<div style="max-width: 1200px; height: 80px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
-<a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
-<div style="width: 40px; height: 40px; border-radius: 8px; background: #0E2A4F; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5"></path><path d="M16 7l5 5-5 5"></path><path d="M13.5 4l-3 16" stroke="#F5B82E"></path></svg></div>
-<div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 20px; line-height: 1; color: #0E2A4F;">SYRANTIS</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 10px; letter-spacing: 1.4px; text-transform: uppercase; color: #4A6488;">Skill training &amp; placement</span></div>
-</a>
-<nav aria-label="Main" style="display: flex; align-items: center; gap: 32px; font-size: 15px; font-weight: 500;">
-<a href="#courses" style="color: #0E2A4F; text-decoration: none;">Courses</a>
-<a href="#projects" style="color: #0E2A4F; text-decoration: none;">Projects</a>
-<a href="#placement" style="color: #0E2A4F; text-decoration: none;">Placement</a>
-<a href="#programs" style="color: #0E2A4F; text-decoration: none;">For colleges</a>
-<a href="#contact" style="display: inline-flex; align-items: center; height: 44px; padding: 0 20px; border-radius: 8px; background: #0E2A4F; color: #ffffff; text-decoration: none; font-weight: 600;">Partner with us</a>
-</nav>
-</div>
-</header><section id="top" style="width: 100%; background: #FAFAF7; padding: 96px 0 112px; box-sizing: border-box; position: relative; overflow: hidden;">
-<svg style="position: absolute; right: 0; top: 0;" width="520" height="260" viewBox="0 0 520 260" aria-hidden="true">
-<defs><pattern id="hdots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.3" fill="#C9D3E3"></circle></pattern></defs>
-<rect x="0" y="0" width="520" height="260" fill="url(#hdots)" opacity="0.8"></rect>
-</svg>
-<div style="position: relative; max-width: 1200px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; align-items: center;">
-<div style="display: flex; flex-direction: column; gap: 28px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #1D5FD3;">Skill training + placement · For colleges &amp; students</div>
-<h1 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 68px; line-height: 1.04; letter-spacing: -2px; color: #0E2A4F; text-wrap: balance;">Every course ends with something <span style="border-bottom: 6px solid #F5B82E;">built.</span></h1>
-<p style="margin: 0; font-size: 20px; line-height: 1.6; color: #4A6488; max-width: 520px; text-wrap: pretty;">Industry-ready training in programming, web, data and hardware, with placement support that takes students from the classroom to their first job.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 14px;"><a href="#contact" style="display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 24px; border-radius: 8px; box-sizing: border-box; background: #F5B82E; color: #0E2A4F; font-weight: 600; font-size: 16px; text-decoration: none;">Bring Syrantis to your college<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E2A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a><a href="#courses" style="display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 24px; border-radius: 8px; box-sizing: border-box; background: transparent; color: #0E2A4F; border: 1.5px solid #0E2A4F; font-weight: 600; font-size: 16px; text-decoration: none;">Explore courses<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E2A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></div>
-<div style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 15px; color: #0E2A4F; font-weight: 500;">
-<span style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg>9 courses</span>
-<span style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg>312 hours of training</span>
-<span style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg>10 real-world builds</span>
-</div>
-</div>
-<div style="background: #0E2A4F; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden;">
-<svg style="position: absolute; right: 0; top: 0;" width="200" height="120" viewBox="0 0 200 120" aria-hidden="true"><g fill="none" stroke="#3A5C8C" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M200 24 H150 L134 40 H96"></path><path d="M200 60 H170 L156 74 H126"></path></g><circle cx="96" cy="40" r="4" fill="#0E2A4F" stroke="#3A5C8C" stroke-width="1.4"></circle><circle cx="126" cy="74" r="4" fill="#F5B82E"></circle></svg>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.6px; text-transform: uppercase; color: #8DB6FF; position: relative;">The Syrantis pathway</div>
-<div style="display: flex; align-items: flex-start; gap: 16px; padding: 20px; background: rgba(255,255,255,0.06); border: 1px solid rgba(141,182,255,0.25); border-radius: 12px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: #8DB6FF; padding-top: 3px;">01</div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff;">Learn</div><div style="font-size: 15px; line-height: 1.5; color: #C9D8F2;">9 courses across programming, web, data and hardware</div></div>
-</div><div style="display: flex; align-items: flex-start; gap: 16px; padding: 20px; background: rgba(255,255,255,0.06); border: 1px solid rgba(141,182,255,0.25); border-radius: 12px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: #8DB6FF; padding-top: 3px;">02</div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff;">Build</div><div style="font-size: 15px; line-height: 1.5; color: #C9D8F2;">Real projects a school, shop or campus actually uses</div></div>
-</div><div style="display: flex; align-items: flex-start; gap: 16px; padding: 20px; background: rgba(255,255,255,0.06); border: 1px solid rgba(141,182,255,0.25); border-radius: 12px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: #F5B82E; padding-top: 3px;">03</div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 22px; color: #F5B82E;">Get placed</div><div style="font-size: 15px; line-height: 1.5; color: #C9D8F2;">Interview prep, portfolio and hiring-partner drives</div></div>
-</div>
-</div>
-</div>
-</section><section id="who" style="width: 100%; background: #FAFAF7; border-top: 1px solid #D5DCE8; padding: 112px 0; box-sizing: border-box;">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; display: flex; flex-direction: column; gap: 56px;">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #1D5FD3;">Who it's for</div>
-<h2 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 44px; line-height: 1.1; letter-spacing: -1px; color: #0E2A4F; text-wrap: balance;">One programme, two wins.</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4A6488; text-wrap: pretty;">Colleges get a ready-made, project-based skills track. Students leave with work they can show and a path to a job.</p>
-</div><div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px;">
-<div style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 16px; padding: 40px; display: flex; flex-direction: column; gap: 24px;">
-<div style="width: 52px; height: 52px; border-radius: 12px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l9-5 9 5-9 5-9-5z"></path><path d="M7 12v5c3 2 7 2 10 0v-5"></path></svg></div>
-<div style="display: flex; flex-direction: column; gap: 8px;"><div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #1D5FD3;">For colleges</div><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 28px; line-height: 1.2; color: #0E2A4F;">A skills + placement partner for your campus</h3></div>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px;"><li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #0E2A4F;"><span style="flex-shrink: 0; padding-top: 2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span><span>Curriculum across 9 courses, mapped from foundations to advanced</span></li><li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #0E2A4F;"><span style="flex-shrink: 0; padding-top: 2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span><span>Flexible delivery: semester, summer bootcamp or weekend batches</span></li><li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #0E2A4F;"><span style="flex-shrink: 0; padding-top: 2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span><span>Projects your own campus can use after the batch ends</span></li><li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #0E2A4F;"><span style="flex-shrink: 0; padding-top: 2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span><span>Placement support that strengthens your placement record</span></li></ul>
-<a href="#contact" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 16px; color: #1D5FD3; text-decoration: none;">Talk to us about your campus<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
-</div>
-<div style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 16px; padding: 40px; display: flex; flex-direction: column; gap: 24px;">
-<div style="width: 52px; height: 52px; border-radius: 12px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4 4-6 8-6s7 2 8 6"></path></svg></div>
-<div style="display: flex; flex-direction: column; gap: 8px;"><div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #1D5FD3;">For students</div><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 28px; line-height: 1.2; color: #0E2A4F;">Skills that turn into a job offer</h3></div>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px;"><li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #0E2A4F;"><span style="flex-shrink: 0; padding-top: 2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span><span>Learn by building: every course ends with a working project</span></li><li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #0E2A4F;"><span style="flex-shrink: 0; padding-top: 2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span><span>A portfolio of real builds that holds up in interviews</span></li><li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #0E2A4F;"><span style="flex-shrink: 0; padding-top: 2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span><span>Resume, mock interview and aptitude preparation</span></li><li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #0E2A4F;"><span style="flex-shrink: 0; padding-top: 2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span><span>Access to hiring drives with our startup partners</span></li></ul>
-<a href="#courses" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 16px; color: #1D5FD3; text-decoration: none;">See the courses<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
-</div>
-</div>
-</div>
-</section><section id="courses" style="width: 100%; background: #F3F5F9; border-top: 1px solid #D5DCE8; padding: 112px 0; box-sizing: border-box;">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; display: flex; flex-direction: column; gap: 56px;">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #1D5FD3;">Courses</div>
-<h2 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 44px; line-height: 1.1; letter-spacing: -1px; color: #0E2A4F; text-wrap: balance;">Nine courses, one pathway.</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4A6488; text-wrap: pretty;">Foundations unlock applied courses, and applied courses unlock advanced ones. Pick a single track or build a full semester sequence.</p>
-</div><div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;"><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 16px; border-top: 4px solid #0B7FA8;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #0B7FA8;">Foundations</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">6 wks · 24 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">C Programming</h3><div style="font-size: 14px; color: #4A6488;">Beginner</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Data types, control flow, functions</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Pointers, structures, file handling</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Data structures in C</li></ul>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 16px; border-top: 4px solid #0B7FA8;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #0B7FA8;">Foundations</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">8 wks · 32 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Python Programming</h3><div style="font-size: 14px; color: #4A6488;">Beginner → Advanced</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Core Python and OOP</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">NumPy and Pandas</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Web scraping and automation projects</li></ul>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 16px; border-top: 4px solid #0B7FA8;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #0B7FA8;">Foundations</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">8 wks · 32 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Web Development</h3><div style="font-size: 14px; color: #4A6488;">Beginner → Intermediate</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">HTML, CSS, Flexbox, responsive design</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">JavaScript, DOM and forms</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Fetch API, JSON and mini projects</li></ul>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 16px; border-top: 4px solid #1D5FD3;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #1D5FD3;">Applied</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">8 wks · 32 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">C++ Programming</h3><div style="font-size: 14px; color: #4A6488;">Beginner → Intermediate</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Classes, inheritance, polymorphism</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Smart pointers and memory</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Templates, STL and lambdas</li></ul>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 16px; border-top: 4px solid #1D5FD3;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #1D5FD3;">Applied</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">8 wks · 32 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Java Programming</h3><div style="font-size: 14px; color: #4A6488;">Beginner → Intermediate</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">OOP, interfaces and collections</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Multithreading basics</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">JDBC and desktop GUI projects</li></ul>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 16px; border-top: 4px solid #1D5FD3;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #1D5FD3;">Applied</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">10 wks · 40 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">React.js</h3><div style="font-size: 14px; color: #4A6488;">Beginner → Intermediate</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">JSX, components, props and state</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Hooks, APIs and routing</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Building a full React app</li></ul>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 16px; border-top: 4px solid #1D5FD3;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #1D5FD3;">Applied</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">8 wks · 32 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Arduino &amp; Raspberry Pi</h3><div style="font-size: 14px; color: #4A6488;">Beginner → Intermediate</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">GPIO, sensors, motors and relays</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Arduino programming</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Raspberry Pi with Python</li></ul>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 16px; border-top: 4px solid #5B45C9;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #5B45C9;">Advanced</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">12 wks · 48 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Data Science</h3><div style="font-size: 14px; color: #4A6488;">Intermediate → Advanced</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Pandas, EDA and visualisation</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Machine learning with Scikit-learn</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Model evaluation and tuning</li></ul>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 16px; border-top: 4px solid #5B45C9;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #5B45C9;">Advanced</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">10 wks · 40 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Computer Vision</h3><div style="font-size: 14px; color: #4A6488;">Advanced</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">OpenCV and image processing</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">CNNs and deep learning</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Real-time object detection</li></ul>
-</article></div>
-</div>
-</section><section id="projects" style="width: 100%; background: #FAFAF7; border-top: 1px solid #D5DCE8; padding: 112px 0; box-sizing: border-box;">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; display: flex; flex-direction: column; gap: 56px;">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #1D5FD3;">Real-world builds</div>
-<h2 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 44px; line-height: 1.1; letter-spacing: -1px; color: #0E2A4F; text-wrap: balance;">Projects that keep running after the course ends.</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4A6488; text-wrap: pretty;">Each build solves a problem a school, college, home or local shop actually has, so it holds up in an interview, a hackathon or a college application.</p>
-</div><div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px;"><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-01</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Face-Recognition Attendance</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">School office</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">A Pi camera marks the register as students walk in.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Python</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Computer Vision</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Arduino &amp; Pi</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-02</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Smart Classroom Power Saver</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">Campus facilities</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">Motion sensors switch off fans and lights in empty rooms.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">C</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Arduino &amp; Pi</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-03</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Digital Notice Board</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">College admin</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">Staff post notices; students see a live feed by department.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Web Dev</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">React</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-04</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Exam Result Analyser</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">Teachers</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">Charts weak topics and flags students slipping across tests.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Python</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Data Science</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-05</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Water Tank Level Monitor</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">Hostel / home</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">Alerts before the tank runs dry or overflows.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Arduino &amp; Pi</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Python</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-06</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Shop Billing &amp; Stock</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">Local shop</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">Fast billing with stock that updates on every sale.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">C++</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Java</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-07</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Library Book Tracker</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">School library</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">Issue by barcode, with an automatic overdue list each morning.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Java</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">React</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-08</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Plant Disease Detector</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">Agriculture</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">A phone photo of a leaf returns the likely disease.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Python</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Data Science</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">CV</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-09</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Air Quality Monitor</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">Campus</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">Logs dust, temperature and humidity to a live web chart.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Arduino &amp; Pi</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Data Science</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Web</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-10</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">School Bus Tracker</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">Parents</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">Parents watch the bus on a live map, with arrival alerts.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Arduino &amp; Pi</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Python</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">React</span></div>
-</article></div>
-</div>
-</section><section id="placement" style="width: 100%; background: #0E2A4F; padding: 112px 0; box-sizing: border-box;">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; display: flex; flex-direction: column; gap: 56px;">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #8DB6FF;">Placement</div>
-<h2 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 44px; line-height: 1.1; letter-spacing: -1px; color: #ffffff; text-wrap: balance;">From classroom to first job.</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #C9D8F2; text-wrap: pretty;">Training is half the promise. Our placement track prepares every student for interviews and connects them with startups that are hiring.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px;"><div style="display: flex; flex-direction: column; gap: 6px; padding: 28px; border: 1px solid rgba(141,182,255,0.25); border-radius: 14px; background: rgba(255,255,255,0.04);"><div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 40px; line-height: 1; color: #F5B82E;">250+</div><div style="font-size: 15px; color: #C9D8F2;">Students placed</div></div><div style="display: flex; flex-direction: column; gap: 6px; padding: 28px; border: 1px solid rgba(141,182,255,0.25); border-radius: 14px; background: rgba(255,255,255,0.04);"><div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 40px; line-height: 1; color: #F5B82E;">40+</div><div style="font-size: 15px; color: #C9D8F2;">Hiring partners</div></div><div style="display: flex; flex-direction: column; gap: 6px; padding: 28px; border: 1px solid rgba(141,182,255,0.25); border-radius: 14px; background: rgba(255,255,255,0.04);"><div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 40px; line-height: 1; color: #F5B82E;">₹4.8 LPA</div><div style="font-size: 15px; color: #C9D8F2;">Average package</div></div><div style="display: flex; flex-direction: column; gap: 6px; padding: 28px; border: 1px solid rgba(141,182,255,0.25); border-radius: 14px; background: rgba(255,255,255,0.04);"><div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 40px; line-height: 1; color: #F5B82E;">85%</div><div style="font-size: 15px; color: #C9D8F2;">Placement rate</div></div></div>
-<div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 16px;"><div style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #ffffff; border-radius: 14px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1"></circle></svg></div><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">01</span></div>
-<div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; color: #0E2A4F;">Skill assessment</div>
-<div style="font-size: 14px; line-height: 1.5; color: #4A6488;">Find each student's level and the right track.</div>
-</div><div style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #ffffff; border-radius: 14px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"></path><path d="M3 13l9 5 9-5"></path></svg></div><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">02</span></div>
-<div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; color: #0E2A4F;">Build a portfolio</div>
-<div style="font-size: 14px; line-height: 1.5; color: #4A6488;">Real projects documented on GitHub and a live demo.</div>
-</div><div style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #ffffff; border-radius: 14px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6v18h12V7l-4-4z"></path><path d="M14 3v4h4"></path><path d="M9 13h6M9 17h6"></path></svg></div><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">03</span></div>
-<div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; color: #0E2A4F;">Resume &amp; LinkedIn</div>
-<div style="font-size: 14px; line-height: 1.5; color: #4A6488;">Profiles rewritten around the projects they built.</div>
-</div><div style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #ffffff; border-radius: 14px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></div><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">04</span></div>
-<div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; color: #0E2A4F;">Mock interviews</div>
-<div style="font-size: 14px; line-height: 1.5; color: #4A6488;">Technical and HR rounds with feedback.</div>
-</div><div style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #ffffff; border-radius: 14px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12l4-4 5 2 5-2 4 4-7 7-4-3-3 1z"></path></svg></div><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">05</span></div>
-<div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; color: #0E2A4F;">Hiring drives</div>
-<div style="font-size: 14px; line-height: 1.5; color: #4A6488;">Shortlisted students meet our startup partners.</div>
-</div><div style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #ffffff; border-radius: 14px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5h8v2M3 13h18"></path></svg></div><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">06</span></div>
-<div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; color: #0E2A4F;">Offer &amp; onboarding</div>
-<div style="font-size: 14px; line-height: 1.5; color: #4A6488;">Support until the student joins.</div>
-</div></div>
-<div style="display: flex; flex-direction: column; gap: 20px;">
-<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #ffffff;">Our hiring partners</h3><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #8DB6FF;">Startups across Bengaluru &amp; Karnataka</span></div>
-<div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 16px;"><div style="height: 88px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><circle cx="16" cy="16" r="11" fill="none" stroke="#4A6488" stroke-width="3"></circle><circle cx="16" cy="16" r="4" fill="#4A6488"></circle></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 15px; line-height: 1.15; color: #0E2A4F;">Kormo Labs</span><span style="font-size: 11px; line-height: 1.2; color: #4A6488;">SaaS · Koramangala</span></div></div><div style="height: 88px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><path d="M16 4l12 22H4z" fill="none" stroke="#4A6488" stroke-width="3" stroke-linejoin="round"></path></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 15px; line-height: 1.15; color: #0E2A4F;">Tiffora</span><span style="font-size: 11px; line-height: 1.2; color: #4A6488;">Food-tech · HSR Layout</span></div></div><div style="height: 88px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><rect x="5" y="5" width="22" height="22" rx="6" fill="#4A6488"></rect><path d="M11 16h10" stroke="#ffffff" stroke-width="3" stroke-linecap="round"></path></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 15px; line-height: 1.15; color: #0E2A4F;">Vayuvolt</span><span style="font-size: 11px; line-height: 1.2; color: #4A6488;">EV · Electronic City</span></div></div><div style="height: 88px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><path d="M16 3l11 6.5v13L16 29 5 22.5v-13z" fill="none" stroke="#4A6488" stroke-width="3" stroke-linejoin="round"></path></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 15px; line-height: 1.15; color: #0E2A4F;">Namma Metrics</span><span style="font-size: 11px; line-height: 1.2; color: #4A6488;">Analytics · Indiranagar</span></div></div><div style="height: 88px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><path d="M6 24V10M13 24V6M20 24V13M27 24V8" stroke="#4A6488" stroke-width="3.5" stroke-linecap="round"></path></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 15px; line-height: 1.15; color: #0E2A4F;">Bylane</span><span style="font-size: 11px; line-height: 1.2; color: #4A6488;">Logistics · Whitefield</span></div></div><div style="height: 88px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><circle cx="11" cy="16" r="7" fill="#4A6488"></circle><circle cx="21" cy="16" r="7" fill="none" stroke="#4A6488" stroke-width="3"></circle></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 15px; line-height: 1.15; color: #0E2A4F;">Chakra IoT</span><span style="font-size: 11px; line-height: 1.2; color: #4A6488;">Smart devices · Peenya</span></div></div><div style="height: 88px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><path d="M5 22l7-12 5 8 4-5 6 9" fill="none" stroke="#4A6488" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 15px; line-height: 1.15; color: #0E2A4F;">Pixelghat</span><span style="font-size: 11px; line-height: 1.2; color: #4A6488;">Design · Jayanagar</span></div></div><div style="height: 88px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><rect x="4" y="9" width="24" height="14" rx="7" fill="none" stroke="#4A6488" stroke-width="3"></rect><circle cx="21" cy="16" r="3.5" fill="#4A6488"></circle></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 15px; line-height: 1.15; color: #0E2A4F;">Suryaflow</span><span style="font-size: 11px; line-height: 1.2; color: #4A6488;">Clean energy · Mysuru</span></div></div><div style="height: 88px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><path d="M16 4v24M4 16h24" stroke="#4A6488" stroke-width="3.5" stroke-linecap="round"></path><circle cx="16" cy="16" r="5" fill="#ffffff" stroke="#4A6488" stroke-width="3"></circle></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 15px; line-height: 1.15; color: #0E2A4F;">Railyard AI</span><span style="font-size: 11px; line-height: 1.2; color: #4A6488;">AI · Bellandur</span></div></div><div style="height: 88px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><path d="M6 8h20L16 26z" fill="#4A6488"></path></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 15px; line-height: 1.15; color: #0E2A4F;">Nimbuu Pay</span><span style="font-size: 11px; line-height: 1.2; color: #4A6488;">Fintech · MG Road</span></div></div><div style="height: 88px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><rect x="5" y="5" width="10" height="10" rx="2" fill="#4A6488"></rect><rect x="17" y="17" width="10" height="10" rx="2" fill="#4A6488"></rect><rect x="17" y="5" width="10" height="10" rx="2" fill="none" stroke="#4A6488" stroke-width="2.5"></rect></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 15px; line-height: 1.15; color: #0E2A4F;">Coastline Robotics</span><span style="font-size: 11px; line-height: 1.2; color: #4A6488;">Robotics · Mangaluru</span></div></div><div style="height: 88px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><path d="M6 16a10 10 0 0 1 20 0" fill="none" stroke="#4A6488" stroke-width="3.5" stroke-linecap="round"></path><circle cx="16" cy="22" r="4" fill="#4A6488"></circle></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 15px; line-height: 1.15; color: #0E2A4F;">Kaapi Cloud</span><span style="font-size: 11px; line-height: 1.2; color: #4A6488;">DevOps · Hubballi</span></div></div></div>
-</div>
-</div>
-</section><section id="programs" style="width: 100%; background: #F3F5F9; border-top: 1px solid #D5DCE8; padding: 112px 0; box-sizing: border-box;">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; display: flex; flex-direction: column; gap: 56px;">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #1D5FD3;">For colleges</div>
-<h2 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 44px; line-height: 1.1; letter-spacing: -1px; color: #0E2A4F; text-wrap: balance;">Fits your calendar, not the other way round.</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4A6488; text-wrap: pretty;">Every duration is a starting point. Share your batch length and year group, and we'll build the sequence around it.</p>
-</div><div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;"><div style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px;">
-<div style="width: 52px; height: 52px; border-radius: 12px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Semester</h3><div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: #1D5FD3;">14–16 weeks</div></div>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A6488;">One course per group with a weekly lab, run inside your academic calendar.</p>
-</div><div style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px;">
-<div style="width: 52px; height: 52px; border-radius: 12px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Summer bootcamp</h3><div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: #1D5FD3;">4–6 weeks</div></div>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A6488;">An intensive format with two courses back to back, ideal between semesters.</p>
-</div><div style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px;">
-<div style="width: 52px; height: 52px; border-radius: 12px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path><path d="M14 14h4v4h-4z"></path></svg></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Weekend batch</h3><div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: #1D5FD3;">3–4 months</div></div>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A6488;">One course over Saturday sessions, alongside regular classes.</p>
-</div></div>
-</div>
-</section><section id="contact" style="width: 100%; background: #FAFAF7; border-top: 1px solid #D5DCE8; padding: 112px 0; box-sizing: border-box;">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; display: flex; flex-direction: column; gap: 56px;">
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; align-items: start;">
-<div style="display: flex; flex-direction: column; gap: 32px;">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #1D5FD3;">Contact</div>
-<h2 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 44px; line-height: 1.1; letter-spacing: -1px; color: #0E2A4F; text-wrap: balance;">Bring Syrantis to your campus.</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4A6488; text-wrap: pretty;">Tell us about your college or your goals. We'll get back within one working day with a plan and a proposal.</p>
-</div>
-<div style="display: flex; flex-direction: column; gap: 16px;"><div style="display: flex; align-items: center; gap: 14px; font-size: 17px; color: #0E2A4F;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #ffffff; border: 1px solid #D5DCE8; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg></div>+91 9538065463</div><div style="display: flex; align-items: center; gap: 14px; font-size: 17px; color: #0E2A4F;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #ffffff; border: 1px solid #D5DCE8; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M22 6l-10 7L2 6"></path></svg></div>syrantis@gmail.com</div><div style="display: flex; align-items: center; gap: 14px; font-size: 17px; color: #0E2A4F;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #ffffff; border: 1px solid #D5DCE8; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>www.syrantis.in</div><div style="display: flex; align-items: center; gap: 14px; font-size: 17px; color: #0E2A4F;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #ffffff; border: 1px solid #D5DCE8; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>Bangalore</div></div>
-</div>
-<div style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 16px; padding: 36px; display: flex; flex-direction: column; gap: 18px;">
-<div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Request a callback</div>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px;"><div style="display: flex; flex-direction: column; gap: 8px;"><label for="f-name" style="font-size: 14px; font-weight: 600; color: #0E2A4F;">Your name</label><input id="f-name" type="text" placeholder="" style="height: 48px; padding: 0 14px; border: 1px solid #B7C4D8; border-radius: 8px; font-size: 16px; font-family: inherit; color: #0E2A4F; background: #ffffff; box-sizing: border-box;"></div><div style="display: flex; flex-direction: column; gap: 8px;"><label for="f-phone" style="font-size: 14px; font-weight: 600; color: #0E2A4F;">Phone</label><input id="f-phone" type="tel" placeholder="" style="height: 48px; padding: 0 14px; border: 1px solid #B7C4D8; border-radius: 8px; font-size: 16px; font-family: inherit; color: #0E2A4F; background: #ffffff; box-sizing: border-box;"></div></div>
-<div style="display: flex; flex-direction: column; gap: 8px;"><label for="f-org" style="font-size: 14px; font-weight: 600; color: #0E2A4F;">College or institution</label><input id="f-org" type="text" placeholder="" style="height: 48px; padding: 0 14px; border: 1px solid #B7C4D8; border-radius: 8px; font-size: 16px; font-family: inherit; color: #0E2A4F; background: #ffffff; box-sizing: border-box;"></div>
-<div style="display: flex; flex-direction: column; gap: 8px;"><label for="f-role" style="font-size: 14px; font-weight: 600; color: #0E2A4F;">I am a</label><select id="f-role" style="height: 48px; padding: 0 12px; border: 1px solid #B7C4D8; border-radius: 8px; font-size: 16px; font-family: inherit; color: #0E2A4F; background: #ffffff;"><option>College faculty / TPO</option><option>Principal / management</option><option>Student</option><option>Parent</option></select></div>
-<div style="display: flex; flex-direction: column; gap: 8px;"><label for="f-msg" style="font-size: 14px; font-weight: 600; color: #0E2A4F;">Message</label><textarea id="f-msg" rows="3" style="padding: 12px 14px; border: 1px solid #B7C4D8; border-radius: 8px; font-size: 16px; font-family: inherit; color: #0E2A4F; resize: vertical;"></textarea></div>
-<button type="button" style="height: 52px; border: none; border-radius: 8px; background: #F5B82E; color: #0E2A4F; font-size: 16px; font-weight: 700; font-family: inherit; cursor: pointer;">Send request</button>
-</div>
-</div>
-</div>
-</section><footer style="width: 100%; flex-grow: 1; background: #0E2A4F; box-sizing: border-box; padding: 40px 0;">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap;">
-<div style="display: flex; flex-direction: column; gap: 4px;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 20px; color: #ffffff;">SYRANTIS</span><span style="font-size: 14px; color: #C9D8F2;">Industry skills <span style="color: #F5B82E;">+</span> placement support</span></div>
-<div style="display: flex; gap: 28px; font-size: 14px;"><a href="#courses" style="color: #C9D8F2; text-decoration: none;">Courses</a><a href="#projects" style="color: #C9D8F2; text-decoration: none;">Projects</a><a href="#placement" style="color: #C9D8F2; text-decoration: none;">Placement</a><a href="#contact" style="color: #C9D8F2; text-decoration: none;">Contact</a></div>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #8DB6FF;">© 2026 Syrantis · Bangalore</div>
-</div>
+
+<!-- ============================== HEADER ============================== -->
+<header class="site-header" id="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Syrantis, back to top">
+      <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+        <rect class="lg-bg" width="32" height="32" rx="9"/>
+        <rect class="lg-on" x="7" y="7" width="8" height="8" rx="2"/>
+        <rect class="lg-ac" x="17" y="7" width="8" height="8" rx="2"/>
+        <rect class="lg-on" x="7" y="17" width="8" height="8" rx="2"/>
+        <rect class="lg-on" x="17" y="17" width="8" height="8" rx="2" opacity=".5"/>
+      </svg>
+      <span class="brand-word">Syrantis</span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="#modules">Modules</a>
+      <a href="#roles">Who uses it</a>
+      <a href="#features">Features</a>
+      <a href="#process">How we work</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm" href="#demo">Book a demo</a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">ERP for colleges and universities</p>
+      <h1 id="hero-title">Run your whole college from <span class="mark">one system<svg class="mark-line" viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4 13 C 70 5, 150 4, 210 9 S 285 15, 296 7"/></svg></span>.</h1>
+      <p class="lede">Syrantis connects the office, the staffroom and every student's phone. Timetables, attendance, exams, fees and notices live in one place, so everyone works from the same records.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#demo">Book a demo</a>
+        <a class="btn btn-ghost" href="#modules">Explore the modules</a>
+      </div>
+      <ul class="hero-facts">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Web portal for office and staff</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Student app for Android and iOS</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Set up around your programs and semesters</li>
+      </ul>
+    </div>
+
+    <div class="demo">
+      <div class="window" role="group" aria-label="Example: a teacher marking attendance">
+        <div class="window-bar">
+          <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="window-title">Teacher portal · Attendance</span>
+        </div>
+        <div class="reg-head">
+          <div>
+            <p class="reg-class">BCA · Sem 3 · Section A</p>
+            <p class="reg-meta">Period 2 · 10:00–10:50 · Data Structures</p>
+          </div>
+          <span class="chip mono">Mon 2 Nov</span>
+        </div>
+        <ul class="reg-list" id="reg-list">
+          <li data-v="P" data-me="1"><span class="roll">23BCA01</span><span class="name">Ananya Iyer</span>
+            <span class="seg" role="group" aria-label="Ananya Iyer"><button type="button" data-v="P" aria-pressed="true" aria-label="Present">P</button><button type="button" data-v="A" aria-pressed="false" aria-label="Absent">A</button><button type="button" data-v="L" aria-pressed="false" aria-label="Late">L</button></span></li>
+          <li data-v="P"><span class="roll">23BCA02</span><span class="name">Rahul Verma</span>
+            <span class="seg" role="group" aria-label="Rahul Verma"><button type="button" data-v="P" aria-pressed="true" aria-label="Present">P</button><button type="button" data-v="A" aria-pressed="false" aria-label="Absent">A</button><button type="button" data-v="L" aria-pressed="false" aria-label="Late">L</button></span></li>
+          <li data-v="A"><span class="roll">23BCA03</span><span class="name">Fatima Sheikh</span>
+            <span class="seg" role="group" aria-label="Fatima Sheikh"><button type="button" data-v="P" aria-pressed="false" aria-label="Present">P</button><button type="button" data-v="A" aria-pressed="true" aria-label="Absent">A</button><button type="button" data-v="L" aria-pressed="false" aria-label="Late">L</button></span></li>
+          <li data-v="P"><span class="roll">23BCA04</span><span class="name">Karthik Nair</span>
+            <span class="seg" role="group" aria-label="Karthik Nair"><button type="button" data-v="P" aria-pressed="true" aria-label="Present">P</button><button type="button" data-v="A" aria-pressed="false" aria-label="Absent">A</button><button type="button" data-v="L" aria-pressed="false" aria-label="Late">L</button></span></li>
+          <li data-v="L"><span class="roll">23BCA05</span><span class="name">Meera Joshi</span>
+            <span class="seg" role="group" aria-label="Meera Joshi"><button type="button" data-v="P" aria-pressed="false" aria-label="Present">P</button><button type="button" data-v="A" aria-pressed="false" aria-label="Absent">A</button><button type="button" data-v="L" aria-pressed="true" aria-label="Late">L</button></span></li>
+        </ul>
+        <div class="reg-foot">
+          <p class="reg-count mono" id="reg-count" aria-live="polite">3 present · 1 absent · 1 late</p>
+          <button class="btn btn-primary btn-sm" id="reg-save" type="button">Save attendance</button>
+        </div>
+      </div>
+
+      <div class="phone" aria-label="Example: Ananya's student app">
+        <div class="phone-screen">
+          <div class="notch" aria-hidden="true"></div>
+          <p class="ph-hello">Hi, Ananya</p>
+          <p class="ph-sub">BCA · Sem 3 · A</p>
+          <div class="ph-card" id="ph-card">
+            <div class="ring" id="ph-ring"><span id="ph-pct">82.8%</span></div>
+            <div>
+              <p class="ph-label">Attendance this semester</p>
+              <p class="ph-status" id="ph-status">Above the 75% minimum</p>
+            </div>
+          </div>
+          <p class="ph-section">Today</p>
+          <ul class="ph-periods">
+            <li><span class="mono">P1</span><span class="subj">Mathematics III</span><span class="mini mini-p">Present</span></li>
+            <li><span class="mono">P2</span><span class="subj">Data Structures</span><span class="mini mini-p" id="ph-p2">Present</span></li>
+            <li><span class="mono">P3</span><span class="subj">DBMS</span><span class="mini mini-n">10:50</span><small>Covered by R. Menon</small></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="demo-hint">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h14M13 6l6 6-6 6"/></svg>
+        Try it: mark Ananya absent and watch her app update.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== MODULES ============================== -->
+<section class="section" id="modules" aria-labelledby="modules-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Modules</p>
+      <h2 id="modules-title">Every office on campus, one login.</h2>
+      <p class="section-lede">Twelve modules built on the same students, classes and semester calendar, so a change in one shows up everywhere it matters.</p>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filter modules">
+      <button class="filter" type="button" data-filter="all" aria-pressed="true">All modules</button>
+      <button class="filter" type="button" data-filter="academics" aria-pressed="false">Academics</button>
+      <button class="filter" type="button" data-filter="office" aria-pressed="false">Office and fees</button>
+      <button class="filter" type="button" data-filter="comms" aria-pressed="false">Communication</button>
+    </div>
+
+    <ul class="module-grid" id="module-grid">
+      <li class="module" data-cat="academics">
+        <span class="m-icon" style="--mb:var(--t1b);--mf:var(--t1f)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 7.5l9 4.5 9-4.5L12 3Z"/><path d="m3 12 9 4.5 9-4.5"/><path d="m3 16.5 9 4.5 9-4.5"/></svg></span>
+        <h3>Classes &amp; Subjects</h3>
+        <p>Programs, semesters and sections, with the subjects and semester dates for each course.</p>
+        <span class="m-cat">Academics</span>
+      </li>
+      <li class="module" data-cat="academics">
+        <span class="m-icon" style="--mb:var(--t5b);--mf:var(--t5f)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 3v3M16 3v3M9 9.5v11M15 9.5v11M3 15h18"/></svg></span>
+        <h3>Timetable</h3>
+        <p>Each class's week, period by period, with breaks, lunch and the teacher for every slot.</p>
+        <span class="m-cat">Academics</span>
+      </li>
+      <li class="module" data-cat="academics">
+        <span class="m-icon" style="--mb:var(--t4b);--mf:var(--t4f)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4 3 8l4 4"/><path d="M3 8h13a4 4 0 0 1 4 4"/><path d="m17 20 4-4-4-4"/><path d="M21 16H8a4 4 0 0 1-4-4"/></svg></span>
+        <h3>Substitutes</h3>
+        <p>Cover an absent teacher for one date. The period moves to the substitute's list for that day.</p>
+        <span class="m-cat">Academics</span>
+      </li>
+      <li class="module" data-cat="academics">
+        <span class="m-icon" style="--mb:var(--t6b);--mf:var(--t6f)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="m8 9 1.5 1.5L12 8M8 15l1.5 1.5L12 14M14.5 9.5H17M14.5 15.5H17"/></svg></span>
+        <h3>Attendance</h3>
+        <p>Present, absent or late for every period, marked by whoever is teaching it that day.</p>
+        <span class="m-cat">Academics</span>
+      </li>
+      <li class="module" data-cat="academics">
+        <span class="m-icon" style="--mb:var(--t3b);--mf:var(--t3f)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h5M8 17h8"/></svg></span>
+        <h3>Exams &amp; Marks</h3>
+        <p>Schedule papers per class with max and pass marks, then enter marks and grades.</p>
+        <span class="m-cat">Academics</span>
+      </li>
+      <li class="module" data-cat="academics">
+        <span class="m-icon" style="--mb:var(--t2b);--mf:var(--t2f)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5c2.5-1 5.5-1 9 1 3.5-2 6.5-2 9-1v13c-2.5-1-5.5-1-9 1-3.5-2-6.5-2-9-1z"/><path d="M12 6.5v13"/></svg></span>
+        <h3>Study Materials</h3>
+        <p>Teachers upload notes and files by class and subject. Students open them from the app.</p>
+        <span class="m-cat">Academics</span>
+      </li>
+      <li class="module" data-cat="office">
+        <span class="m-icon" style="--mb:var(--t5b);--mf:var(--t5f)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2.2"/><path d="M5.8 16c.6-1.6 1.8-2.4 3.2-2.4s2.6.8 3.2 2.4M15 10h3M15 13.5h3"/></svg></span>
+        <h3>Student Records</h3>
+        <p>One profile per student with class, roll number, attendance, marks and fees together.</p>
+        <span class="m-cat">Office and fees</span>
+      </li>
+      <li class="module" data-cat="office">
+        <span class="m-icon" style="--mb:var(--t1b);--mf:var(--t1f)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.8-3 3-4.6 5.5-4.6s4.7 1.6 5.5 4.6"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14.3c2.3-.2 4 1.1 4.6 3.7"/></svg></span>
+        <h3>Staff &amp; Roles</h3>
+        <p>Teachers, HODs and departments, with teaching assignments for each class and subject.</p>
+        <span class="m-cat">Office and fees</span>
+      </li>
+      <li class="module" data-cat="office">
+        <span class="m-icon" style="--mb:var(--t2b);--mf:var(--t2f)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4.5A1.5 1.5 0 0 1 4.5 3H12l9 9-9 9z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></span>
+        <h3>Fee Structure</h3>
+        <p>One price list per program, semester and academic year, shared by every section.</p>
+        <span class="m-cat">Office and fees</span>
+      </li>
+      <li class="module" data-cat="office">
+        <span class="m-icon" style="--mb:var(--t6b);--mf:var(--t6f)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-2-1.5-2 1.5-2-1.5-2 1.5-2-1.5L6 21z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span>
+        <h3>Fee Collection</h3>
+        <p>Cash, UPI, card, cheque or bank transfer, each payment with its own receipt number.</p>
+        <span class="m-cat">Office and fees</span>
+      </li>
+      <li class="module" data-cat="comms">
+        <span class="m-icon" style="--mb:var(--t3b);--mf:var(--t3f)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10v4a1 1 0 0 0 1 1h3l6 4V5L7 9H4a1 1 0 0 0-1 1z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg></span>
+        <h3>Announcements</h3>
+        <p>Notices, events, exams and holidays on one calendar, with office approval for staff posts.</p>
+        <span class="m-cat">Communication</span>
+      </li>
+      <li class="module" data-cat="comms">
+        <span class="m-icon" style="--mb:var(--t4b);--mf:var(--t4f)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></span>
+        <h3>Student App</h3>
+        <p>Timetable, attendance, marks, fees and notices on every student's phone.</p>
+        <span class="m-cat">Communication</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================== ROLES ============================== -->
+<section class="section section-alt" id="roles" aria-labelledby="roles-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Who uses it</p>
+      <h2 id="roles-title">One set of records. Four ways in.</h2>
+      <p class="section-lede">Each person sees the part of the college they're responsible for, and nothing they have to work around.</p>
+    </div>
+    <div class="roles">
+      <article class="role">
+        <div class="role-top"><h3>College office</h3><span class="chip">Web portal</span></div>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Set up programs, classes, subjects and timetables</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Create logins for staff and students</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Approve announcements from teachers</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Raise fees and record payments</li>
+        </ul>
+      </article>
+      <article class="role">
+        <div class="role-top"><h3>Head of Department</h3><span class="chip">Web portal</span></div>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Today's periods across every class in the department</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Mark attendance for any class in the department</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Search students department-wide</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Everything a class teacher can do</li>
+        </ul>
+      </article>
+      <article class="role">
+        <div class="role-top"><h3>Class teacher</h3><span class="chip">Web portal</span></div>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Today's periods, including the ones they're covering</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Mark attendance straight from the timetable</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Enter marks for their own class</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Upload study materials and draft notices</li>
+        </ul>
+      </article>
+      <article class="role">
+        <div class="role-top"><h3>Student</h3><span class="chip">Android &amp; iOS app</span></div>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Today's timetable and who is teaching</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Attendance against the 75% minimum</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Internal assessment marks, paper by paper</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Fees due, receipts and notices</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FEATURES ============================== -->
+<section class="section" id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Features</p>
+      <h2 id="features-title">Made for the way a college day runs.</h2>
+    </div>
+
+    <div class="spreads">
+      <!-- Attendance -->
+      <div class="spread">
+        <div class="spread-copy">
+          <h3>Attendance, counted period by period.</h3>
+          <p>Teachers mark each period they teach. When someone is covering a class, that period shows up on the substitute's list for the day, so no register is left blank.</p>
+          <ul class="ticks">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Present, absent or late for every period</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Dates outside the semester are flagged before saving</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Students see a day-by-period grid and their percentage</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>HODs can step in for any class in their department</li>
+          </ul>
+        </div>
+        <div class="panel" role="group" aria-label="Example: a student's semester attendance">
+          <div class="rg-top">
+            <div>
+              <p class="rg-who mono">Ananya Iyer · 23BCA01</p>
+              <p class="rg-title">Semester 3 attendance</p>
+            </div>
+            <span class="chip mono">20 Jul – 4 Dec 2026</span>
+          </div>
+          <div class="rg-meter">
+            <div class="rg-bar"><div class="rg-fill"></div><span class="rg-tick" aria-hidden="true"></span></div>
+            <div class="rg-scale"><span class="val">82.8% attended</span><span class="at75">75% minimum</span></div>
+          </div>
+          <div class="table-scroll">
+            <table class="rg-table">
+              <thead><tr><th scope="col">Day</th><th scope="col">P1</th><th scope="col">P2</th><th scope="col">P3</th><th scope="col">Lunch</th><th scope="col">P4</th><th scope="col">P5</th></tr></thead>
+              <tbody>
+                <tr><td>Mon 26</td><td class="c-p">P</td><td class="c-p">P</td><td class="c-p">P</td><td class="c-n">–</td><td class="c-p">P</td><td class="c-a">A</td></tr>
+                <tr><td>Tue 27</td><td class="c-p">P</td><td class="c-l">L</td><td class="c-p">P</td><td class="c-n">–</td><td class="c-p">P</td><td class="c-p">P</td></tr>
+                <tr><td>Wed 28</td><td class="c-a">A</td><td class="c-a">A</td><td class="c-p">P</td><td class="c-n">–</td><td class="c-p">P</td><td class="c-p">P</td></tr>
+                <tr><td>Thu 29</td><td class="c-p">P</td><td class="c-p">P</td><td class="c-p">P</td><td class="c-n">–</td><td class="c-l">L</td><td class="c-p">P</td></tr>
+                <tr><td>Fri 30</td><td class="c-p">P</td><td class="c-p">P</td><td class="c-p">P</td><td class="c-n">–</td><td class="c-p">P</td><td class="c-n">–</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="legend">
+            <span><i class="c-p"></i>Present</span><span><i class="c-a"></i>Absent</span><span><i class="c-l"></i>Late, counts as attended</span><span><i class="c-n"></i>No class</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fees -->
+      <div class="spread flip">
+        <div class="spread-copy">
+          <h3>Fees that always add up.</h3>
+          <p>Set the fee once for each program, semester and year. Generate dues for a whole class, then record payments as they come in. Balances are worked out from the receipts every time, so the ledger can't drift.</p>
+          <ul class="ticks">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Cash, UPI, card, cheque and bank transfer</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Concessions with a recorded reason, or a full waiver</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Overdue fees flagged against their due date</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Students see their dues and every receipt in the app</li>
+          </ul>
+        </div>
+        <div class="receipt-wrap">
+          <div class="panel receipt" role="group" aria-label="Example fee receipt">
+            <div class="rc-head">
+              <div>
+                <p class="rc-label">Fee receipt</p>
+                <p class="rc-no mono">SYR/26/00418</p>
+              </div>
+              <span class="status status-ok">Paid</span>
+            </div>
+            <dl class="rc-meta">
+              <div><dt>Student</dt><dd>Rahul Verma<br><span class="mono" style="font-weight:400;font-size:12px">23BCA02</span></dd></div>
+              <div><dt>Course</dt><dd>BCA · Sem 3<br><span class="mono" style="font-weight:400;font-size:12px">2026–27</span></dd></div>
+              <div><dt>Paid on</dt><dd>2 Nov 2026<br><span class="mono" style="font-weight:400;font-size:12px">UPI</span></dd></div>
+            </dl>
+            <table class="rc-lines">
+              <tbody>
+                <tr><td>Semester fee</td><td>₹42,000</td></tr>
+                <tr><td>Concession · merit</td><td>− ₹4,200</td></tr>
+                <tr class="sub"><td>Payable</td><td>₹37,800</td></tr>
+                <tr><td>Paid earlier · 1 receipt</td><td>− ₹19,300</td></tr>
+                <tr class="hl"><td>This payment · UPI</td><td>− ₹18,500</td></tr>
+                <tr class="total"><td>Balance</td><td>₹0</td></tr>
+              </tbody>
+            </table>
+            <p class="rc-note">Receipt numbers are issued by the system when the payment is saved.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Announcements -->
+      <div class="spread">
+        <div class="spread-copy">
+          <h3>Notices that reach the right class.</h3>
+          <p>Teachers draft announcements and the office approves them before anyone sees them. Send to everyone, staff only, students only or chosen classes, and students get a notification on their phone.</p>
+          <ul class="ticks">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Notices, events, exams and holidays on one calendar</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Scheduled exam papers appear on the calendar by themselves</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Start and end dates for time-bound notices</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Link a circular or form to any announcement</li>
+          </ul>
+        </div>
+        <div class="panel ann" role="group" aria-label="Example: approving a teacher's announcement">
+          <p class="ann-label"><span>Office portal · Announcements</span><span class="mono">1 waiting</span></p>
+          <article class="ann-card">
+            <div class="ann-top">
+              <span class="cat">Notice</span>
+              <span class="status status-warn" id="ann-status">Pending approval</span>
+            </div>
+            <h4>Lab record submission moved to Friday</h4>
+            <p>Data Structures lab records are now due on Fri 6 Nov, 4:00 pm, at the department office.</p>
+            <p class="ann-meta">Prof. S. Rao · For BCA Sem 3 · Sections A and B</p>
+            <div class="ann-actions" id="ann-actions">
+              <button class="btn btn-primary btn-sm" type="button" id="ann-approve">Approve</button>
+              <button class="btn btn-ghost btn-sm" type="button" id="ann-reject">Reject</button>
+            </div>
+          </article>
+          <div class="push" id="ann-push" data-state="waiting">
+            <span class="push-icon" aria-hidden="true">S</span>
+            <div>
+              <p class="push-app">Syrantis · <span id="push-when">sent to students on approval</span></p>
+              <p class="push-title">Lab record submission moved to Friday</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== OWNERSHIP BAND ============================== -->
+<section class="band" aria-labelledby="own-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Built to stay yours</p>
+      <h2 id="own-title">Your records, in a format you own.</h2>
+      <p class="section-lede">Choosing an ERP shouldn't mean handing over your college's history. Syrantis is built on open, widely used technology.</p>
+    </div>
+    <div class="own-grid">
+      <div class="own">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-13M4.5 12c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8"/></svg>
+        <h3>Standard PostgreSQL</h3>
+        <p>Every record sits in an open, widely used database, so your data can be exported whenever you need it.</p>
+      </div>
+      <div class="own">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="14" height="11" rx="1.5"/><path d="M6 19h7M9.5 15v4"/><rect x="16" y="9" width="5.5" height="11" rx="1.2"/></svg>
+        <h3>Any browser, any phone</h3>
+        <p>The office and staff work in a web browser with nothing to install. Students use the app on Android or iPhone.</p>
+      </div>
+      <div class="own">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+        <h3>Your college's rules</h3>
+        <p>Programs, sections, periods, working days, semester dates and fee amounts are set by your office, not built into the code.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PROCESS ============================== -->
+<section class="section" id="process" aria-labelledby="process-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">How we work</p>
+      <h2 id="process-title">From spreadsheets to go-live, with us alongside.</h2>
+      <p class="section-lede">Syrantis is a service as much as software. Our team sets the system up around your college and stays with you after launch.</p>
+    </div>
+    <ol class="steps">
+      <li class="step"><h3>Discover</h3><p>We map your programs, semesters, sections, fee rules and who signs off on what.</p></li>
+      <li class="step"><h3>Configure</h3><p>We set up classes, subjects, teacher assignments, timetables and the fee structure.</p></li>
+      <li class="step"><h3>Migrate</h3><p>We bring in students, staff and outstanding dues from your existing spreadsheets.</p></li>
+      <li class="step"><h3>Train</h3><p>Short sessions for the office, HODs and teachers. Students get a guide for their first login.</p></li>
+      <li class="step"><h3>Support</h3><p>After go-live we're on hand for questions, changes and new requirements.</p></li>
+    </ol>
+    <p class="steps-note">Need a workflow we don't cover yet? We build custom modules on the same platform. <a href="#demo">Tell us what you need</a></p>
+  </div>
+</section>
+
+<!-- ============================== FAQ ============================== -->
+<section class="section section-alt" id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-wrap">
+    <div class="section-head">
+      <p class="eyebrow">FAQ</p>
+      <h2 id="faq-title">Questions colleges ask us.</h2>
+      <p class="section-lede">Something else on your mind? <a href="#demo">Ask us directly.</a></p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Do students need to install anything?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p class="answer">Students use the Syrantis app on Android or iOS. The office, HODs and teachers use the web portal in any modern browser, with nothing to install.</p>
+      </details>
+      <details>
+        <summary>What happens when a teacher is absent?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p class="answer">The office assigns a substitute for that date. The period moves to the substitute's attendance list for the day, and students see who is covering in their timetable.</p>
+      </details>
+      <details>
+        <summary>Can teachers post announcements on their own?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p class="answer">Teachers can draft them. A teacher's post waits for the office to approve it before anyone sees it, while posts from the office go out straight away.</p>
+      </details>
+      <details>
+        <summary>How are concessions and waivers handled?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p class="answer">Each student's fee can carry a concession with a recorded reason, or be waived entirely. Balances are recalculated from the recorded payments every time, so what the student sees in the app matches the receipts.</p>
+      </details>
+      <details>
+        <summary>Can it handle several programs, semesters and sections?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p class="answer">Yes. Every class is a section of a program and semester for an academic year. Subjects, fees and semester dates are set once per course and shared by all of its sections.</p>
+      </details>
+      <details>
+        <summary>Can we take our data with us?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p class="answer">Yes. Your records are kept in a standard PostgreSQL database and can be exported in full.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== DEMO ============================== -->
+<section class="section demo-sec" id="demo" aria-labelledby="demo-title">
+  <div class="wrap demo-grid">
+    <div class="demo-copy">
+      <p class="eyebrow">Book a demo</p>
+      <h2 id="demo-title">See Syrantis set up for a college like yours.</h2>
+      <p>Tell us a little about your institution. We'll walk you through all three parts of the system using programs and sections that look like yours.</p>
+      <ul class="walk">
+        <li><span class="m-icon" style="--mb:var(--t1b);--mf:var(--t1f)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>The office portal: setup, fees and approvals</li>
+        <li><span class="m-icon" style="--mb:var(--t2b);--mf:var(--t2f)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="m8 9 1.5 1.5L12 8M8 15l1.5 1.5L12 14M14.5 9.5H17M14.5 15.5H17"/></svg></span>The teacher portal: attendance, marks and materials</li>
+        <li><span class="m-icon" style="--mb:var(--t4b);--mf:var(--t4f)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></span>The student app on a real phone</li>
+      </ul>
+      <div class="contact-line">
+        <span>Prefer email?</span>
+        <span class="addr" id="contact-email">syrantis@gmail.com</span>
+        <button class="btn btn-ghost btn-sm" type="button" id="copy-email">Copy address</button>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <form id="demo-form" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="demo-name">Your name</label>
+            <input id="demo-name" name="name" type="text" autocomplete="name" required>
+            <span class="err" id="err-name"></span>
+          </div>
+          <div class="field">
+            <label for="demo-email">Work email</label>
+            <input id="demo-email" name="email" type="email" autocomplete="email" required>
+            <span class="err" id="err-email"></span>
+          </div>
+          <div class="field">
+            <label for="demo-org">College or university</label>
+            <input id="demo-org" name="org" type="text" autocomplete="organization" required>
+            <span class="err" id="err-org"></span>
+          </div>
+          <div class="field">
+            <label for="demo-phone">Phone <span class="opt">(optional)</span></label>
+            <input id="demo-phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="demo-role">Your role</label>
+            <select id="demo-role" name="role">
+              <option>Principal or Director</option>
+              <option>College administrator</option>
+              <option>Head of Department</option>
+              <option>IT or systems</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="demo-size">Number of students</label>
+            <select id="demo-size" name="size">
+              <option>Under 500</option>
+              <option selected>500 – 2,000</option>
+              <option>2,000 – 5,000</option>
+              <option>More than 5,000</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="demo-msg">What would you like to see? <span class="opt">(optional)</span></label>
+            <textarea id="demo-msg" name="message" placeholder="For example: fee collection for three programs, or replacing paper attendance registers."></textarea>
+          </div>
+        </div>
+        <div class="form-foot">
+          <small>We use these details only to arrange your demo.</small>
+          <button class="btn btn-primary" type="submit" id="demo-submit">Request a demo</button>
+        </div>
+      </form>
+
+      <div class="result" id="demo-result" hidden>
+        <h3 id="result-title">Your request is ready to send</h3>
+        <p id="result-text">Copy the details below and email them to us at syrantis@gmail.com. We'll reply to arrange a time.</p>
+        <div class="field">
+          <label for="result-body">Request details</label>
+          <textarea id="result-body" readonly></textarea>
+        </div>
+        <div class="result-actions">
+          <button class="btn btn-primary btn-sm" type="button" id="copy-request">Copy details</button>
+          <button class="btn btn-ghost btn-sm" type="button" id="edit-request">Edit request</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand" href="#top" aria-label="Syrantis, back to top">
+        <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true">
+          <rect class="lg-bg" width="32" height="32" rx="9"/>
+          <rect class="lg-on" x="7" y="7" width="8" height="8" rx="2"/>
+          <rect class="lg-ac" x="17" y="7" width="8" height="8" rx="2"/>
+          <rect class="lg-on" x="7" y="17" width="8" height="8" rx="2"/>
+          <rect class="lg-on" x="17" y="17" width="8" height="8" rx="2" opacity=".5"/>
+        </svg>
+        <span class="brand-word">Syrantis</span>
+      </a>
+      <p>ERP for colleges and universities. Timetables, attendance, exams, fees and notices in one system, set up and supported by our team.</p>
+    </div>
+    <div>
+      <h4>Product</h4>
+      <ul>
+        <li><a href="#modules">Modules</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#roles">Who uses it</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#process">How we work</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#demo">Book a demo</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <ul>
+        <li class="fc-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Bangalore, Karnataka, India</span></li>
+        <li class="fc-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.5l1.8 4.4-2.3 1.5a11 11 0 0 0 6.1 6.1l1.5-2.3L20 15.5V19a1.5 1.5 0 0 1-1.6 1.5C10.6 20 4 13.4 3.5 5.6A1.5 1.5 0 0 1 5 4z"/></svg><a href="tel:+919538065463" aria-label="Call +91 95380 65463">+91 95380 65463</a></li>
+        <li class="fc-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.5l1.8 4.4-2.3 1.5a11 11 0 0 0 6.1 6.1l1.5-2.3L20 15.5V19a1.5 1.5 0 0 1-1.6 1.5C10.6 20 4 13.4 3.5 5.6A1.5 1.5 0 0 1 5 4z"/></svg><a href="tel:+916361728809" aria-label="Call +91 63617 28809">+91 63617 28809</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <span>© 2026 Syrantis. All rights reserved.</span>
+    <span>Built for colleges across India.</span>
+  </div>
 </footer>
-</div>
-<div class="wrap mob">
-<header style="width: 100%; height: 64px; background: #FAFAF7; border-bottom: 1px solid #D5DCE8; box-sizing: border-box;">
-<div style="max-width: 1200px; height: 64px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
-<a href="#m-top" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
-<div style="width: 34px; height: 34px; border-radius: 8px; background: #0E2A4F; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5"></path><path d="M16 7l5 5-5 5"></path><path d="M13.5 4l-3 16" stroke="#F5B82E"></path></svg></div>
-<div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 17px; line-height: 1; color: #0E2A4F;">SYRANTIS</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 8px; letter-spacing: 1px; text-transform: uppercase; color: #4A6488;">Skill training &amp; placement</span></div>
-</a>
-<nav aria-label="Main" style="display: flex; align-items: center; gap: 32px; font-size: 15px; font-weight: 500;">
-<a href="#m-contact" style="display: inline-flex; align-items: center; height: 44px; padding: 0 14px; border-radius: 8px; background: #0E2A4F; color: #ffffff; text-decoration: none; font-weight: 600; white-space: nowrap;">Partner with us</a>
-</nav>
-</div>
-</header><section id="m-top" style="width: 100%; background: #FAFAF7; padding: 48px 0 64px; box-sizing: border-box; position: relative; overflow: hidden;">
-<svg style="position: absolute; right: 0; top: 0;" width="260" height="180" viewBox="0 0 520 260" aria-hidden="true">
-<defs><pattern id="m-hdots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.3" fill="#C9D3E3"></circle></pattern></defs>
-<rect x="0" y="0" width="520" height="260" fill="url(#hdots)" opacity="0.8"></rect>
-</svg>
-<div style="position: relative; max-width: 1200px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 40px; align-items: center;">
-<div style="display: flex; flex-direction: column; gap: 28px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #1D5FD3;">Skill training + placement · For colleges &amp; students</div>
-<h1 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 40px; line-height: 1.08; letter-spacing: -1px; color: #0E2A4F; text-wrap: balance;">Every course ends with something <span style="border-bottom: 4px solid #F5B82E;">built.</span></h1>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #4A6488; max-width: 520px; text-wrap: pretty;">Industry-ready training in programming, web, data and hardware, with placement support that takes students from the classroom to their first job.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 14px;"><a href="#m-contact" style="display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 24px; border-radius: 8px; box-sizing: border-box; background: #F5B82E; color: #0E2A4F; font-weight: 600; font-size: 16px; text-decoration: none;">Bring Syrantis to your college<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E2A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a><a href="#m-courses" style="display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 24px; border-radius: 8px; box-sizing: border-box; background: transparent; color: #0E2A4F; border: 1.5px solid #0E2A4F; font-weight: 600; font-size: 16px; text-decoration: none;">Explore courses<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E2A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a></div>
-<div style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 15px; color: #0E2A4F; font-weight: 500;">
-<span style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg>9 courses</span>
-<span style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg>312 hours of training</span>
-<span style="display: flex; align-items: center; gap: 8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg>10 real-world builds</span>
-</div>
-</div>
-<div style="background: #0E2A4F; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden;">
-<svg style="position: absolute; right: 0; top: 0;" width="200" height="120" viewBox="0 0 200 120" aria-hidden="true"><g fill="none" stroke="#3A5C8C" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M200 24 H150 L134 40 H96"></path><path d="M200 60 H170 L156 74 H126"></path></g><circle cx="96" cy="40" r="4" fill="#0E2A4F" stroke="#3A5C8C" stroke-width="1.4"></circle><circle cx="126" cy="74" r="4" fill="#F5B82E"></circle></svg>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.6px; text-transform: uppercase; color: #8DB6FF; position: relative;">The Syrantis pathway</div>
-<div style="display: flex; align-items: flex-start; gap: 16px; padding: 20px; background: rgba(255,255,255,0.06); border: 1px solid rgba(141,182,255,0.25); border-radius: 12px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: #8DB6FF; padding-top: 3px;">01</div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 19px; color: #ffffff;">Learn</div><div style="font-size: 15px; line-height: 1.5; color: #C9D8F2;">9 courses across programming, web, data and hardware</div></div>
-</div><div style="display: flex; align-items: flex-start; gap: 16px; padding: 20px; background: rgba(255,255,255,0.06); border: 1px solid rgba(141,182,255,0.25); border-radius: 12px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: #8DB6FF; padding-top: 3px;">02</div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 19px; color: #ffffff;">Build</div><div style="font-size: 15px; line-height: 1.5; color: #C9D8F2;">Real projects a school, shop or campus actually uses</div></div>
-</div><div style="display: flex; align-items: flex-start; gap: 16px; padding: 20px; background: rgba(255,255,255,0.06); border: 1px solid rgba(141,182,255,0.25); border-radius: 12px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: #F5B82E; padding-top: 3px;">03</div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 19px; color: #F5B82E;">Get placed</div><div style="font-size: 15px; line-height: 1.5; color: #C9D8F2;">Interview prep, portfolio and hiring-partner drives</div></div>
-</div>
-</div>
-</div>
-</section><section id="m-who" style="width: 100%; background: #FAFAF7; border-top: 1px solid #D5DCE8; padding: 64px 0; box-sizing: border-box;">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 36px;">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #1D5FD3;">Who it's for</div>
-<h2 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 30px; line-height: 1.1; letter-spacing: -1px; color: #0E2A4F; text-wrap: balance;">One programme, two wins.</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A6488; text-wrap: pretty;">Colleges get a ready-made, project-based skills track. Students leave with work they can show and a path to a job.</p>
-</div><div style="display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 16px;">
-<div style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 24px;">
-<div style="width: 52px; height: 52px; border-radius: 12px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l9-5 9 5-9 5-9-5z"></path><path d="M7 12v5c3 2 7 2 10 0v-5"></path></svg></div>
-<div style="display: flex; flex-direction: column; gap: 8px;"><div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #1D5FD3;">For colleges</div><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 23px; line-height: 1.2; color: #0E2A4F;">A skills + placement partner for your campus</h3></div>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px;"><li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #0E2A4F;"><span style="flex-shrink: 0; padding-top: 2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span><span>Curriculum across 9 courses, mapped from foundations to advanced</span></li><li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #0E2A4F;"><span style="flex-shrink: 0; padding-top: 2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span><span>Flexible delivery: semester, summer bootcamp or weekend batches</span></li><li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #0E2A4F;"><span style="flex-shrink: 0; padding-top: 2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span><span>Projects your own campus can use after the batch ends</span></li><li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #0E2A4F;"><span style="flex-shrink: 0; padding-top: 2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span><span>Placement support that strengthens your placement record</span></li></ul>
-<a href="#m-contact" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 16px; color: #1D5FD3; text-decoration: none;">Talk to us about your campus<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
-</div>
-<div style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 24px;">
-<div style="width: 52px; height: 52px; border-radius: 12px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4 4-6 8-6s7 2 8 6"></path></svg></div>
-<div style="display: flex; flex-direction: column; gap: 8px;"><div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #1D5FD3;">For students</div><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 23px; line-height: 1.2; color: #0E2A4F;">Skills that turn into a job offer</h3></div>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px;"><li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #0E2A4F;"><span style="flex-shrink: 0; padding-top: 2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span><span>Learn by building: every course ends with a working project</span></li><li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #0E2A4F;"><span style="flex-shrink: 0; padding-top: 2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span><span>A portfolio of real builds that holds up in interviews</span></li><li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #0E2A4F;"><span style="flex-shrink: 0; padding-top: 2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span><span>Resume, mock interview and aptitude preparation</span></li><li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.55; color: #0E2A4F;"><span style="flex-shrink: 0; padding-top: 2px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span><span>Access to hiring drives with our startup partners</span></li></ul>
-<a href="#m-courses" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 16px; color: #1D5FD3; text-decoration: none;">See the courses<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
-</div>
-</div>
-</div>
-</section><section id="m-courses" style="width: 100%; background: #F3F5F9; border-top: 1px solid #D5DCE8; padding: 64px 0; box-sizing: border-box;">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 36px;">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #1D5FD3;">Courses</div>
-<h2 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 30px; line-height: 1.1; letter-spacing: -1px; color: #0E2A4F; text-wrap: balance;">Nine courses, one pathway.</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A6488; text-wrap: pretty;">Foundations unlock applied courses, and applied courses unlock advanced ones. Pick a single track or build a full semester sequence.</p>
-</div><div style="display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 14px;"><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px; border-top: 4px solid #0B7FA8;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #0B7FA8;">Foundations</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">6 wks · 24 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">C Programming</h3><div style="font-size: 14px; color: #4A6488;">Beginner</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Data types, control flow, functions</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Pointers, structures, file handling</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Data structures in C</li></ul>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px; border-top: 4px solid #0B7FA8;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #0B7FA8;">Foundations</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">8 wks · 32 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Python Programming</h3><div style="font-size: 14px; color: #4A6488;">Beginner → Advanced</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Core Python and OOP</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">NumPy and Pandas</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Web scraping and automation projects</li></ul>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px; border-top: 4px solid #0B7FA8;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #0B7FA8;">Foundations</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">8 wks · 32 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Web Development</h3><div style="font-size: 14px; color: #4A6488;">Beginner → Intermediate</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">HTML, CSS, Flexbox, responsive design</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">JavaScript, DOM and forms</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Fetch API, JSON and mini projects</li></ul>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px; border-top: 4px solid #1D5FD3;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #1D5FD3;">Applied</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">8 wks · 32 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">C++ Programming</h3><div style="font-size: 14px; color: #4A6488;">Beginner → Intermediate</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Classes, inheritance, polymorphism</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Smart pointers and memory</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Templates, STL and lambdas</li></ul>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px; border-top: 4px solid #1D5FD3;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #1D5FD3;">Applied</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">8 wks · 32 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Java Programming</h3><div style="font-size: 14px; color: #4A6488;">Beginner → Intermediate</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">OOP, interfaces and collections</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Multithreading basics</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">JDBC and desktop GUI projects</li></ul>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px; border-top: 4px solid #1D5FD3;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #1D5FD3;">Applied</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">10 wks · 40 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">React.js</h3><div style="font-size: 14px; color: #4A6488;">Beginner → Intermediate</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">JSX, components, props and state</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Hooks, APIs and routing</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Building a full React app</li></ul>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px; border-top: 4px solid #1D5FD3;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #1D5FD3;">Applied</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">8 wks · 32 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Arduino &amp; Raspberry Pi</h3><div style="font-size: 14px; color: #4A6488;">Beginner → Intermediate</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">GPIO, sensors, motors and relays</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Arduino programming</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Raspberry Pi with Python</li></ul>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px; border-top: 4px solid #5B45C9;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #5B45C9;">Advanced</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">12 wks · 48 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Data Science</h3><div style="font-size: 14px; color: #4A6488;">Intermediate → Advanced</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Pandas, EDA and visualisation</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Machine learning with Scikit-learn</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Model evaluation and tuning</li></ul>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px; border-top: 4px solid #5B45C9;">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #5B45C9;">Advanced</span><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">10 wks · 40 hrs</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Computer Vision</h3><div style="font-size: 14px; color: #4A6488;">Advanced</div></div>
-<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 6px;"><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">OpenCV and image processing</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">CNNs and deep learning</li><li style="font-size: 15px; line-height: 1.5; color: #4A6488;">Real-time object detection</li></ul>
-</article></div>
-</div>
-</section><section id="m-projects" style="width: 100%; background: #FAFAF7; border-top: 1px solid #D5DCE8; padding: 64px 0; box-sizing: border-box;">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 36px;">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #1D5FD3;">Real-world builds</div>
-<h2 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 30px; line-height: 1.1; letter-spacing: -1px; color: #0E2A4F; text-wrap: balance;">Projects that keep running after the course ends.</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A6488; text-wrap: pretty;">Each build solves a problem a school, college, home or local shop actually has, so it holds up in an interview, a hackathon or a college application.</p>
-</div><div style="display: grid; grid-auto-flow: column; grid-auto-columns: 250px; gap: 14px; overflow-x: auto; padding-bottom: 10px;"><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-01</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Face-Recognition Attendance</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">School office</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">A Pi camera marks the register as students walk in.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Python</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Computer Vision</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Arduino &amp; Pi</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-02</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Smart Classroom Power Saver</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">Campus facilities</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">Motion sensors switch off fans and lights in empty rooms.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">C</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Arduino &amp; Pi</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-03</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Digital Notice Board</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">College admin</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">Staff post notices; students see a live feed by department.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Web Dev</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">React</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-04</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Exam Result Analyser</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">Teachers</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">Charts weak topics and flags students slipping across tests.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Python</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Data Science</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-05</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Water Tank Level Monitor</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">Hostel / home</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">Alerts before the tank runs dry or overflows.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Arduino &amp; Pi</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Python</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-06</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Shop Billing &amp; Stock</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">Local shop</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">Fast billing with stock that updates on every sale.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">C++</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Java</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-07</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Library Book Tracker</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">School library</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">Issue by barcode, with an automatic overdue list each morning.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Java</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">React</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-08</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Plant Disease Detector</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">Agriculture</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">A phone photo of a leaf returns the likely disease.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Python</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Data Science</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">CV</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-09</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">Air Quality Monitor</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">Campus</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">Logs dust, temperature and humidity to a live web chart.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Arduino &amp; Pi</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Data Science</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Web</span></div>
-</article><article style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #4A6488;">PRJ-10</span></div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.25; color: #0E2A4F;">School Bus Tracker</h3>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #1D5FD3;">Parents</div>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4A6488; flex-grow: 1;">Parents watch the bus on a live map, with arrival alerts.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 6px;"><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Arduino &amp; Pi</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">Python</span><span style="font-size: 12px; font-weight: 500; color: #0E2A4F; background: #EAF1FC; border-radius: 999px; padding: 4px 10px;">React</span></div>
-</article></div>
-</div>
-</section><section id="m-placement" style="width: 100%; background: #0E2A4F; padding: 64px 0; box-sizing: border-box;">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 36px;">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #8DB6FF;">Placement</div>
-<h2 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 30px; line-height: 1.1; letter-spacing: -1px; color: #ffffff; text-wrap: balance;">From classroom to first job.</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C9D8F2; text-wrap: pretty;">Training is half the promise. Our placement track prepares every student for interviews and connects them with startups that are hiring.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;"><div style="display: flex; flex-direction: column; gap: 6px; padding: 18px; border: 1px solid rgba(141,182,255,0.25); border-radius: 14px; background: rgba(255,255,255,0.04);"><div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 26px; line-height: 1; color: #F5B82E;">250+</div><div style="font-size: 15px; color: #C9D8F2;">Students placed</div></div><div style="display: flex; flex-direction: column; gap: 6px; padding: 18px; border: 1px solid rgba(141,182,255,0.25); border-radius: 14px; background: rgba(255,255,255,0.04);"><div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 26px; line-height: 1; color: #F5B82E;">40+</div><div style="font-size: 15px; color: #C9D8F2;">Hiring partners</div></div><div style="display: flex; flex-direction: column; gap: 6px; padding: 18px; border: 1px solid rgba(141,182,255,0.25); border-radius: 14px; background: rgba(255,255,255,0.04);"><div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 26px; line-height: 1; color: #F5B82E;">₹4.8 LPA</div><div style="font-size: 15px; color: #C9D8F2;">Average package</div></div><div style="display: flex; flex-direction: column; gap: 6px; padding: 18px; border: 1px solid rgba(141,182,255,0.25); border-radius: 14px; background: rgba(255,255,255,0.04);"><div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 26px; line-height: 1; color: #F5B82E;">85%</div><div style="font-size: 15px; color: #C9D8F2;">Placement rate</div></div></div>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;"><div style="display: flex; flex-direction: column; gap: 10px; padding: 16px; background: #ffffff; border-radius: 14px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1"></circle></svg></div><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">01</span></div>
-<div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 16px; color: #0E2A4F;">Skill assessment</div>
-<div style="font-size: 13px; line-height: 1.5; color: #4A6488;">Find each student's level and the right track.</div>
-</div><div style="display: flex; flex-direction: column; gap: 10px; padding: 16px; background: #ffffff; border-radius: 14px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"></path><path d="M3 13l9 5 9-5"></path></svg></div><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">02</span></div>
-<div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 16px; color: #0E2A4F;">Build a portfolio</div>
-<div style="font-size: 13px; line-height: 1.5; color: #4A6488;">Real projects documented on GitHub and a live demo.</div>
-</div><div style="display: flex; flex-direction: column; gap: 10px; padding: 16px; background: #ffffff; border-radius: 14px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6v18h12V7l-4-4z"></path><path d="M14 3v4h4"></path><path d="M9 13h6M9 17h6"></path></svg></div><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">03</span></div>
-<div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 16px; color: #0E2A4F;">Resume &amp; LinkedIn</div>
-<div style="font-size: 13px; line-height: 1.5; color: #4A6488;">Profiles rewritten around the projects they built.</div>
-</div><div style="display: flex; flex-direction: column; gap: 10px; padding: 16px; background: #ffffff; border-radius: 14px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></div><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">04</span></div>
-<div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 16px; color: #0E2A4F;">Mock interviews</div>
-<div style="font-size: 13px; line-height: 1.5; color: #4A6488;">Technical and HR rounds with feedback.</div>
-</div><div style="display: flex; flex-direction: column; gap: 10px; padding: 16px; background: #ffffff; border-radius: 14px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12l4-4 5 2 5-2 4 4-7 7-4-3-3 1z"></path></svg></div><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">05</span></div>
-<div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 16px; color: #0E2A4F;">Hiring drives</div>
-<div style="font-size: 13px; line-height: 1.5; color: #4A6488;">Shortlisted students meet our startup partners.</div>
-</div><div style="display: flex; flex-direction: column; gap: 10px; padding: 16px; background: #ffffff; border-radius: 14px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5h8v2M3 13h18"></path></svg></div><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #4A6488;">06</span></div>
-<div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 16px; color: #0E2A4F;">Offer &amp; onboarding</div>
-<div style="font-size: 13px; line-height: 1.5; color: #4A6488;">Support until the student joins.</div>
-</div></div>
-<div style="display: flex; flex-direction: column; gap: 20px;">
-<div style="display: flex; flex-direction: column; gap: 6px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #ffffff;">Our hiring partners</h3><span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; color: #8DB6FF;">Startups across Bengaluru &amp; Karnataka</span></div>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px;"><div style="height: 68px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><circle cx="16" cy="16" r="11" fill="none" stroke="#4A6488" stroke-width="3"></circle><circle cx="16" cy="16" r="4" fill="#4A6488"></circle></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 13px; line-height: 1.15; color: #0E2A4F;">Kormo Labs</span><span style="font-size: 10px; line-height: 1.2; color: #4A6488;">SaaS · Koramangala</span></div></div><div style="height: 68px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><path d="M16 4l12 22H4z" fill="none" stroke="#4A6488" stroke-width="3" stroke-linejoin="round"></path></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 13px; line-height: 1.15; color: #0E2A4F;">Tiffora</span><span style="font-size: 10px; line-height: 1.2; color: #4A6488;">Food-tech · HSR Layout</span></div></div><div style="height: 68px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><rect x="5" y="5" width="22" height="22" rx="6" fill="#4A6488"></rect><path d="M11 16h10" stroke="#ffffff" stroke-width="3" stroke-linecap="round"></path></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 13px; line-height: 1.15; color: #0E2A4F;">Vayuvolt</span><span style="font-size: 10px; line-height: 1.2; color: #4A6488;">EV · Electronic City</span></div></div><div style="height: 68px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><path d="M16 3l11 6.5v13L16 29 5 22.5v-13z" fill="none" stroke="#4A6488" stroke-width="3" stroke-linejoin="round"></path></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 13px; line-height: 1.15; color: #0E2A4F;">Namma Metrics</span><span style="font-size: 10px; line-height: 1.2; color: #4A6488;">Analytics · Indiranagar</span></div></div><div style="height: 68px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><path d="M6 24V10M13 24V6M20 24V13M27 24V8" stroke="#4A6488" stroke-width="3.5" stroke-linecap="round"></path></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 13px; line-height: 1.15; color: #0E2A4F;">Bylane</span><span style="font-size: 10px; line-height: 1.2; color: #4A6488;">Logistics · Whitefield</span></div></div><div style="height: 68px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><circle cx="11" cy="16" r="7" fill="#4A6488"></circle><circle cx="21" cy="16" r="7" fill="none" stroke="#4A6488" stroke-width="3"></circle></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 13px; line-height: 1.15; color: #0E2A4F;">Chakra IoT</span><span style="font-size: 10px; line-height: 1.2; color: #4A6488;">Smart devices · Peenya</span></div></div><div style="height: 68px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><path d="M5 22l7-12 5 8 4-5 6 9" fill="none" stroke="#4A6488" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 13px; line-height: 1.15; color: #0E2A4F;">Pixelghat</span><span style="font-size: 10px; line-height: 1.2; color: #4A6488;">Design · Jayanagar</span></div></div><div style="height: 68px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><rect x="4" y="9" width="24" height="14" rx="7" fill="none" stroke="#4A6488" stroke-width="3"></rect><circle cx="21" cy="16" r="3.5" fill="#4A6488"></circle></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 13px; line-height: 1.15; color: #0E2A4F;">Suryaflow</span><span style="font-size: 10px; line-height: 1.2; color: #4A6488;">Clean energy · Mysuru</span></div></div><div style="height: 68px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><path d="M16 4v24M4 16h24" stroke="#4A6488" stroke-width="3.5" stroke-linecap="round"></path><circle cx="16" cy="16" r="5" fill="#ffffff" stroke="#4A6488" stroke-width="3"></circle></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 13px; line-height: 1.15; color: #0E2A4F;">Railyard AI</span><span style="font-size: 10px; line-height: 1.2; color: #4A6488;">AI · Bellandur</span></div></div><div style="height: 68px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><path d="M6 8h20L16 26z" fill="#4A6488"></path></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 13px; line-height: 1.15; color: #0E2A4F;">Nimbuu Pay</span><span style="font-size: 10px; line-height: 1.2; color: #4A6488;">Fintech · MG Road</span></div></div><div style="height: 68px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><rect x="5" y="5" width="10" height="10" rx="2" fill="#4A6488"></rect><rect x="17" y="17" width="10" height="10" rx="2" fill="#4A6488"></rect><rect x="17" y="5" width="10" height="10" rx="2" fill="none" stroke="#4A6488" stroke-width="2.5"></rect></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 13px; line-height: 1.15; color: #0E2A4F;">Coastline Robotics</span><span style="font-size: 10px; line-height: 1.2; color: #4A6488;">Robotics · Mangaluru</span></div></div><div style="height: 68px; background: #ffffff; border: 1px solid #D5DCE8; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 0 10px;"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true" style="flex-shrink: 0;"><path d="M6 16a10 10 0 0 1 20 0" fill="none" stroke="#4A6488" stroke-width="3.5" stroke-linecap="round"></path><circle cx="16" cy="22" r="4" fill="#4A6488"></circle></svg><div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 13px; line-height: 1.15; color: #0E2A4F;">Kaapi Cloud</span><span style="font-size: 10px; line-height: 1.2; color: #4A6488;">DevOps · Hubballi</span></div></div></div>
-</div>
-</div>
-</section><section id="m-programs" style="width: 100%; background: #F3F5F9; border-top: 1px solid #D5DCE8; padding: 64px 0; box-sizing: border-box;">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 36px;">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #1D5FD3;">For colleges</div>
-<h2 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 30px; line-height: 1.1; letter-spacing: -1px; color: #0E2A4F; text-wrap: balance;">Fits your calendar, not the other way round.</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A6488; text-wrap: pretty;">Every duration is a starting point. Share your batch length and year group, and we'll build the sequence around it.</p>
-</div><div style="display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 14px;"><div style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 14px;">
-<div style="width: 52px; height: 52px; border-radius: 12px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Semester</h3><div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: #1D5FD3;">14–16 weeks</div></div>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A6488;">One course per group with a weekly lab, run inside your academic calendar.</p>
-</div><div style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 14px;">
-<div style="width: 52px; height: 52px; border-radius: 12px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Summer bootcamp</h3><div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: #1D5FD3;">4–6 weeks</div></div>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A6488;">An intensive format with two courses back to back, ideal between semesters.</p>
-</div><div style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 14px;">
-<div style="width: 52px; height: 52px; border-radius: 12px; background: #EAF1FC; display: flex; align-items: center; justify-content: center;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path><path d="M14 14h4v4h-4z"></path></svg></div>
-<div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Weekend batch</h3><div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: #1D5FD3;">3–4 months</div></div>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A6488;">One course over Saturday sessions, alongside regular classes.</p>
-</div></div>
-</div>
-</section><section id="m-contact" style="width: 100%; background: #FAFAF7; border-top: 1px solid #D5DCE8; padding: 64px 0; box-sizing: border-box;">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 36px;">
-<div style="display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 40px; align-items: start;">
-<div style="display: flex; flex-direction: column; gap: 32px;">
-<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #1D5FD3;">Contact</div>
-<h2 style="margin: 0; font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 30px; line-height: 1.1; letter-spacing: -1px; color: #0E2A4F; text-wrap: balance;">Bring Syrantis to your campus.</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A6488; text-wrap: pretty;">Tell us about your college or your goals. We'll get back within one working day with a plan and a proposal.</p>
-</div>
-<div style="display: flex; flex-direction: column; gap: 16px;"><div style="display: flex; align-items: center; gap: 14px; font-size: 16px; color: #0E2A4F;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #ffffff; border: 1px solid #D5DCE8; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg></div>+91 9538065463</div><div style="display: flex; align-items: center; gap: 14px; font-size: 16px; color: #0E2A4F;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #ffffff; border: 1px solid #D5DCE8; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M22 6l-10 7L2 6"></path></svg></div>syrantis@gmail.com</div><div style="display: flex; align-items: center; gap: 14px; font-size: 16px; color: #0E2A4F;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #ffffff; border: 1px solid #D5DCE8; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>www.syrantis.in</div><div style="display: flex; align-items: center; gap: 14px; font-size: 16px; color: #0E2A4F;"><div style="width: 44px; height: 44px; border-radius: 10px; background: #ffffff; border: 1px solid #D5DCE8; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1D5FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>Bangalore</div></div>
-</div>
-<div style="background: #ffffff; border: 1px solid #D5DCE8; border-radius: 16px; padding: 22px; display: flex; flex-direction: column; gap: 18px;">
-<div style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 24px; color: #0E2A4F;">Request a callback</div>
-<div style="display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 16px;"><div style="display: flex; flex-direction: column; gap: 8px;"><label for="m-f-name" style="font-size: 14px; font-weight: 600; color: #0E2A4F;">Your name</label><input id="m-f-name" type="text" placeholder="" style="height: 48px; padding: 0 14px; border: 1px solid #B7C4D8; border-radius: 8px; font-size: 16px; font-family: inherit; color: #0E2A4F; background: #ffffff; box-sizing: border-box;"></div><div style="display: flex; flex-direction: column; gap: 8px;"><label for="m-f-phone" style="font-size: 14px; font-weight: 600; color: #0E2A4F;">Phone</label><input id="m-f-phone" type="tel" placeholder="" style="height: 48px; padding: 0 14px; border: 1px solid #B7C4D8; border-radius: 8px; font-size: 16px; font-family: inherit; color: #0E2A4F; background: #ffffff; box-sizing: border-box;"></div></div>
-<div style="display: flex; flex-direction: column; gap: 8px;"><label for="m-f-org" style="font-size: 14px; font-weight: 600; color: #0E2A4F;">College or institution</label><input id="m-f-org" type="text" placeholder="" style="height: 48px; padding: 0 14px; border: 1px solid #B7C4D8; border-radius: 8px; font-size: 16px; font-family: inherit; color: #0E2A4F; background: #ffffff; box-sizing: border-box;"></div>
-<div style="display: flex; flex-direction: column; gap: 8px;"><label for="m-f-role" style="font-size: 14px; font-weight: 600; color: #0E2A4F;">I am a</label><select id="m-f-role" style="height: 48px; padding: 0 12px; border: 1px solid #B7C4D8; border-radius: 8px; font-size: 16px; font-family: inherit; color: #0E2A4F; background: #ffffff;"><option>College faculty / TPO</option><option>Principal / management</option><option>Student</option><option>Parent</option></select></div>
-<div style="display: flex; flex-direction: column; gap: 8px;"><label for="m-f-msg" style="font-size: 14px; font-weight: 600; color: #0E2A4F;">Message</label><textarea id="m-f-msg" rows="3" style="padding: 12px 14px; border: 1px solid #B7C4D8; border-radius: 8px; font-size: 16px; font-family: inherit; color: #0E2A4F; resize: vertical;"></textarea></div>
-<button type="button" style="height: 52px; border: none; border-radius: 8px; background: #F5B82E; color: #0E2A4F; font-size: 16px; font-weight: 700; font-family: inherit; cursor: pointer;">Send request</button>
-</div>
-</div>
-</div>
-</section><footer style="width: 100%; flex-grow: 1; background: #0E2A4F; box-sizing: border-box; padding: 40px 0;">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; align-items: flex-start; gap: 20px;">
-<div style="display: flex; flex-direction: column; gap: 4px;"><span style="font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 20px; color: #ffffff;">SYRANTIS</span><span style="font-size: 14px; color: #C9D8F2;">Industry skills <span style="color: #F5B82E;">+</span> placement support</span></div>
-<div style="display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px;"><a href="#m-courses" style="color: #C9D8F2; text-decoration: none;">Courses</a><a href="#m-projects" style="color: #C9D8F2; text-decoration: none;">Projects</a><a href="#m-placement" style="color: #C9D8F2; text-decoration: none;">Placement</a><a href="#m-contact" style="color: #C9D8F2; text-decoration: none;">Contact</a></div>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #8DB6FF;">© 2026 Syrantis · Bangalore</div>
-</div>
-</footer>
-</div>
-<script>
-document.querySelectorAll('button').forEach(function(b){
-  if(b.textContent.trim()!=='Send request') return;
-  b.addEventListener('click',function(){
-    var box=b.parentElement, v=function(sel){var e=box.querySelector(sel);return e?e.value.trim():'';};
-    var name=v('input[id$="f-name"]'), phone=v('input[id$="f-phone"]'), org=v('input[id$="f-org"]'), role=v('select'), msg=v('textarea');
-    if(!name||!phone){alert('Please add your name and phone number.');return;}
-    var body='Name: '+name+'\nPhone: '+phone+'\nInstitution: '+org+'\nI am a: '+role+'\n\n'+msg;
-    window.location.href='mailto:syrantis@gmail.com?subject='+encodeURIComponent('Callback request from '+name)+'&body='+encodeURIComponent(body);
-  });
-});
-</script>
+
+<script src="js/script.js"></script>
 </body>
 </html>
